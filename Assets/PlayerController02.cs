@@ -15,6 +15,7 @@ public class PlayerController02 : MonoBehaviour
 
     void Start()
     {
+        // DontDestroyOnLoad(gameObject);   シーンをまたいでもこれで指定した引数のものは引き継がれる
         Application.targetFrameRate = 60;
         this.rigid2D = GetComponent<Rigidbody2D>();
         this.animator = GetComponent<Animator>();
